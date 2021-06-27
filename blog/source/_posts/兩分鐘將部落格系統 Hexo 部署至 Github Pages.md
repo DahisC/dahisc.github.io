@@ -51,7 +51,7 @@ cd blog
 npm i hexo-deployer-git
 ```
 
-## 3. 更改 \_config.yml 設定檔
+## 3. 更改根目錄中 \_config.yml 的部署設定
 
 ```yml
 deploy:
