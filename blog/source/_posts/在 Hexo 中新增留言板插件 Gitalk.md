@@ -3,6 +3,7 @@ title: 在 Hexo 中新增留言板插件 Gitalk
 abbrlink: 51727
 date: 2021-06-28 01:45:35
 tags: [Hexo, Gitalk]
+category: [Deployment]
 ---
 
 # 前言
