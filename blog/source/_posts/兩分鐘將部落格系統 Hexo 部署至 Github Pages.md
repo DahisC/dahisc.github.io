@@ -3,7 +3,6 @@ title: 兩分鐘將部落格系統 Hexo 部署至 Github Pages
 abbrlink: 9721
 date: 2021-06-27 14:29:32
 tags: [Github Page, Hexo]
-category: [Deployment]
 ---
 
 ![](github-pages.jpg)
