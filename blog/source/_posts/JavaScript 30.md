@@ -3,6 +3,7 @@ title: JavaScript 30
 abbrlink: 58388
 date: 2021-06-27 14:58:44
 tags: [JavaScript]
+category: [Front-end]
 ---
 
 # 06 - Type Ahead
