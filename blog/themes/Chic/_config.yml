@@ -1,5 +1,5 @@
 # Header
-navname: Bentham's Blog
+navname: Dahis's Blog
 
 # navigatior items
 nav:
@@ -7,12 +7,13 @@ nav:
   Categories: /category
   Tags: /tag
   About: /about
+  Portfolio: /portfolio
 
 # favicon
 favicon: /favicon.ico
 
 # Profile
-nickname: Jeremy Bentham
+nickname: Dahis Cheng
 
 ### this variable is MarkDown form.
 description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** <br>Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
@@ -25,7 +26,7 @@ avatar: /image/avatar.jpeg
 links:
   Blog: /archives
   # Category:
-  # Tags: 
+  # Tags:
   # Link:
   # Resume:
   # Publish:
@@ -94,7 +95,6 @@ scripts:
   - /js/tocbot.min.js
     # tscanlin/tocbot: Build a table of contents from headings in an HTML document.
     # https://github.com/tscanlin/tocbot
-
 
 # plugin functions
 ## Mathjax: Math Formula Support
