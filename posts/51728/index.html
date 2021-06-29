@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="author" content="John Doe">
+    <meta name="author" content="DahisC">
 
 
 
@@ -49,7 +49,7 @@
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Dahis&#39;s Blog</a></div>
+            <div class="navbar-header header-logo"><a href="/">Dahis&#39;s Lighthouse</a></div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="/archives">Posts</a>
@@ -71,7 +71,7 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">Dahis&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">Dahis&#39;s Lighthouse</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
@@ -105,9 +105,7 @@
 </script>
         <div class="main">
             <div class="container">
-    
-    
-        <div class="post-toc">
+    <div class="post-toc">
     <div class="tocbot-list">
     </div>
     <div class="tocbot-list-menu">
@@ -167,31 +165,25 @@
         window.scrollTo(0, document.body.scrollHeight);
     }
 
-</script>
-    
+</script>  
+  <article class="post-wrap">
+    <header class="post-header">
+      <h1 class="post-title">Misrosoft 官網切版練習</h1>
+      
+      <div class="post-meta">
+         Author:
+        <a itemprop="author" rel="author" href="/">DahisC</a>
+         
+        <span class="post-time">
+          Date:
+          <a href="#">June 29, 2021&nbsp;&nbsp;15:15:49</a>
+        </span>
+         
+      </div>
+      
+    </header>
 
-    
-    <article class="post-wrap">
-        <header class="post-header">
-            <h1 class="post-title">Misrosoft 官網切版練習</h1>
-            
-                <div class="post-meta">
-                    
-                        Author: <a itemprop="author" rel="author" href="/">John Doe</a>
-                    
-
-                    
-                        <span class="post-time">
-                        Date: <a href="#">June 29, 2021&nbsp;&nbsp;15:15:49</a>
-                        </span>
-                    
-                    
-                </div>
-            
-        </header>
-
-        <div class="post-content">
-            <blockquote>
+    <div class="post-content"><blockquote>
 <p><a href="https://dahisc.github.io/portfolio/microsoft/">作品網址</a></p>
 </blockquote>
 <blockquote>
@@ -207,85 +199,70 @@
 <li>完全仿造官方網站的斷點設計</li>
 <li>流暢的 RWD</li>
 </ul>
+</div>
 
-        </div>
-
+    
+    <section class="post-copyright">
+       
+      <p class="copyright-item">
+        <span>Permalink:</span>
+        <span><a href="https://dahisc.github.io/posts/51728/">https://dahisc.github.io/posts/51728/</a></span>
+      </p>
         
-            <section class="post-copyright">
-                
-                    <p class="copyright-item">
-                        <span>Author:</span>
-                        <span>John Doe</span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>Permalink:</span>
-                        <span><a href="https://dahisc.github.io/posts/51728/">https://dahisc.github.io/posts/51728/</a></span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>License:</span>
-                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
-                    </p>
-                
-                
-                     <p class="copyright-item">
-                         <span>Slogan:</span>
-                         <span>Do you believe in <strong>DESTINY</strong>?</span>
-                     </p>
-                
-
-            </section>
-        
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
-        <section class="post-nav">
-            
-            
-            <a class="next" rel="next" href="/posts/63535/">Amigo - 旅人地圖</a>
-            
-        </section>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    </section>
+    
+    <section class="post-tags">
+      <div>
+        <!-- <span>Tag(s):</span> -->
+        <span class="tag">
+          
+        </span>
+      </div>
+      <div>
+        <a href="javascript:window.history.back();">back</a>
+        <span>·</span>
+        <a href="/">home</a>
+      </div>
+    </section>
+    <section class="post-nav">
+       
+      <a class="next" rel="next" href="/posts/63535/">Amigo - 旅人地圖</a>
+      
+    </section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
+<style>
+  .post-gitalk {
+    margin-top: 5rem;
+  }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<section>
-    <div id="gitalk-container"></div>
+<section class="post-gitalk">
+  <div id="gitalk-container"></div>
 </section>
 
 <script>
-    const gitalk = new Gitalk({
-        clientID: '29fa6a73372198e453e1',
-        clientSecret: '4c24b3860a15d4685af93c57896e463fdb329ba7',
-        repo: 'DahisC.github.io',      // The repository of store comments,
-        owner: 'DahisC',
-        admin: ['DahisC'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false,  // Facebook-like distraction free mode
-        language: 'en'
-    })
+  const gitalk = new Gitalk({
+    clientID: '29fa6a73372198e453e1',
+    clientSecret: '4c24b3860a15d4685af93c57896e463fdb329ba7',
+    repo: 'DahisC.github.io', // The repository of store comments,
+    owner: 'DahisC',
+    admin: ['DahisC'],
+    id: location.pathname, // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    language: 'en',
+  });
 
-    gitalk.render('gitalk-container')
+  gitalk.render('gitalk-container');
 </script>
-    </article>
+
+  </article>
 </div>
 
         </div>
         <footer id="footer" class="footer">
     <div class="copyright">
-        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+        <span>© DahisC | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
 </footer>
 
