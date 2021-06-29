@@ -83,7 +83,8 @@ hexo deploy // 部署網站。
 
 ---
 
-# 插件
+# 延伸閱讀
 
-- 如何在 Hexo 中新增留言功能？
+- [在 Hexo 中新增留言板插件 Gitalk](https://dahisc.github.io/posts/51727/)
 - 如何將 Hexo 的文章網址縮短？
+- 如何將作品集資料夾與 Hexo 部落格系統整合在 Github Pages 上？

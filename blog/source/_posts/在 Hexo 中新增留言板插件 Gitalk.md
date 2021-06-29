@@ -38,23 +38,27 @@ tags: [Hexo, Gitalk]
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
+<style>
+  .post-gitalk {
+    margin-top: 5rem;
+  }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<!-- 這邊的 section 是配合 Chic 的結構，可省略 -->
-<section>
+<section class="post-gitalk">
   <div id="gitalk-container"></div>
 </section>
 
 <script>
   const gitalk = new Gitalk({
-    clientID: '29fa6ad3352198r453e1', // 剛剛申請的 Client ID
-    clientSecret: '4c24b3860a15d8755af93c32896e463asb329ba7', // 剛剛申請的 Client Secret
-    repo: 'Hexo.github.io', // 用來當作資料庫的 Github 專案名稱
-    owner: 'DahisC', // 儲藏庫的擁有者
-    admin: ['DahisC'], // 儲藏庫的擁有者或協作者，只有名單中的帳號可以啟用留言板插件
-    id: location.pathname, // 確保 ID 的獨特性與長度 < 50
+    clientID: '29fa6a73372198e453e1',
+    clientSecret: '4c24b3860a15d4685af93c57896e463fdb329ba7',
+    repo: 'DahisC.github.io', // The repository of store comments,
+    owner: 'DahisC',
+    admin: ['DahisC'],
+    id: location.pathname, // Ensure uniqueness and length less than 50
     distractionFreeMode: false, // Facebook-like distraction free mode
-    language: 'en', // 繁體請填 zh-TW
+    language: 'en',
   });
 
   gitalk.render('gitalk-container');
