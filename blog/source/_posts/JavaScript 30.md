@@ -6,10 +6,23 @@ tags: [JavaScript]
 category: [Portfolio]
 ---
 
-# 06 - Type Ahead
+# [06 - Type Ahead]((https://github.com/DahisC/JavaScript30/blob/main/06%20-%20Type%20Ahead/index-START.html))
 
-## 主要功能
+## 如何在數字中加入千分位逗號？
 
-1.  根據輸入框中的文字過濾符合的國家或城市
-2.  將過濾的條件上色
-3.  過濾條件的人口需要每三位數以逗號隔開
+1. 透過正規表達式
+
+    ```js
+    string.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    string.replace(/\B(?=(\d{3})+\b)/g, ','); // 另一個寫法
+    ```
+
+    - [https://juejin.cn/post/6844903609029623815](https://juejin.cn/post/6844903609029623815)
+
+2. 透過 JavaScript 的內建函式
+
+    ```js
+    Number(string).toLocaleString(); // 必須要是數字
+    ```
+
+# 07 - Array Cardio Day 2
