@@ -22,7 +22,7 @@ category: [Portfolio]
 2. 透過 JavaScript 的內建函式
 
     ```js
-    Number(string).toLocaleString(); // 必須要是數字
+    Number(string).toLocaleString(); // 可能有兼容性的問題
     ```
-
+    
 # 07 - Array Cardio Day 2
