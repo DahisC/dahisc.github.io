@@ -5,10 +5,6 @@ date: 2021-07-04 16:23:24
 tags:
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7Q17ubqLfaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
 # 什麼是 JWT？
 
 > JWT aka. Json Web Token 是依據 [RFC 7519 開放標準](https://datatracker.ietf.org/doc/html/rfc7519) 實作的授權（Authorization）機制。
@@ -67,3 +63,9 @@ tags:
     - 例子：使用者請求時，伺服器判斷你能不能執行請求的過程
     - 搭配的 HTTP Status Code 是 `403 Forbidden`
     - 白話：你可以做……嗎？
+
+---
+
+# Ref
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7Q17ubqLfaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
