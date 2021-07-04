@@ -189,12 +189,18 @@
       
     </header>
 
-    <div class="post-content"><h1 id="06-Type-Ahead"><a href="#06-Type-Ahead" class="headerlink" title="06 - Type Ahead"></a>06 - Type Ahead</h1><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ol>
-<li> 根據輸入框中的文字過濾符合的國家或城市</li>
-<li> 將過濾的條件上色</li>
-<li> 過濾條件的人口需要每三位數以逗號隔開</li>
+    <div class="post-content"><h1 id="06-Type-Ahead"><a href="#06-Type-Ahead" class="headerlink" title="06 - Type Ahead"></a><a href="(https://github.com/DahisC/JavaScript30/blob/main/06%20-%20Type%20Ahead/index-START.html)">06 - Type Ahead</a></h1><h2 id="如何在數字中加入千分位逗號？"><a href="#如何在數字中加入千分位逗號？" class="headerlink" title="如何在數字中加入千分位逗號？"></a>如何在數字中加入千分位逗號？</h2><ol>
+<li><p>透過正規表達式</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string.replace(<span class="regexp">/\B(?=(\d&#123;3&#125;)+(?!\d))/g</span>, <span class="string">&#x27;,&#x27;</span>);</span><br><span class="line">string.replace(<span class="regexp">/\B(?=(\d&#123;3&#125;)+\b)/g</span>, <span class="string">&#x27;,&#x27;</span>); <span class="comment">// 另一個寫法</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903609029623815">https://juejin.cn/post/6844903609029623815</a></li>
+</ul>
+</li>
+<li><p>透過 JavaScript 的內建函式</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(string).toLocaleString(); <span class="comment">// 可能有兼容性的問題</span></span><br></pre></td></tr></table></figure></li>
 </ol>
-</div>
+<h1 id="07-Array-Cardio-Day-2"><a href="#07-Array-Cardio-Day-2" class="headerlink" title="07 - Array Cardio Day 2"></a>07 - Array Cardio Day 2</h1></div>
 
     
     <section class="post-copyright">
