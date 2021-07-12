@@ -12,7 +12,7 @@
 
 
 
-<title>JWT | Hexo</title>
+<title>把遊戲內的世界頻道訊息推播到 Line 上 - 使用 Node.js 的爬蟲與 Line Notify API 實作 | Hexo</title>
 
 
 
@@ -168,7 +168,7 @@
 </script>  
   <article class="post-wrap">
     <header class="post-header">
-      <h1 class="post-title">JWT</h1>
+      <h1 class="post-title">把遊戲內的世界頻道訊息推播到 Line 上 - 使用 Node.js 的爬蟲與 Line Notify API 實作</h1>
       
       <div class="post-meta">
          Author:
@@ -176,87 +176,48 @@
          
         <span class="post-time">
           Date:
-          <a href="#">July 4, 2021&nbsp;&nbsp;16:23:24</a>
+          <a href="#">July 9, 2021&nbsp;&nbsp;16:52:54</a>
         </span>
          
       </div>
       
     </header>
 
-    <div class="post-content"><h1 id="什麼是-JWT？"><a href="#什麼是-JWT？" class="headerlink" title="什麼是 JWT？"></a>什麼是 JWT？</h1><blockquote>
-<p>JWT aka. Json Web Token 是依據 <a target="_blank" rel="noopener" href="https://datatracker.ietf.org/doc/html/rfc7519">RFC 7519 開放標準</a> 實作的授權（Authorization）機制。<br>麻雀雖小且五臟俱全（a compact and self-contained way）的方式使其可以安全地透過 JSON 格式進行資訊交換，並因數位簽章的機制使其儲存的資料可被信任並通過驗證。<br>加密數位簽章的演算法是使用 HMAC 演算法、或者是以 RDS 或 ECDSA 的公私鑰演算法加密。</p>
-</blockquote>
-<p><a href="#">延伸閱讀：Authorization 與 Authentication 的差別？</a></p>
-<blockquote>
-<p>白話：JWT 以 JSON 格式儲存資料、並且經過演算法加密與編碼過的格式不但小而且也有方式可以驗證其資料有沒有被竄改</p>
-</blockquote>
-<h1 id="為什麼應該要用-JWT？"><a href="#為什麼應該要用-JWT？" class="headerlink" title="為什麼應該要用 JWT？"></a>為什麼應該要用 JWT？</h1><ul>
-<li><p>授權 Authorization</p>
-<p>  使用 JWT 最常見的原因。一旦使用者登入後，其後所有的請求都會夾帶 JWT，允許使用者透過此權杖進行各種動作（進入頁面、使用服務、取得資源等等）。<br>  而單一登入（Single Sign On）的功能也是現今 JWT 被廣泛使用的原因之一，因其小而精巧的格式與儲存資訊的方式可以被簡單地應用在不同網域的系統中。</p>
-</li>
-</ul>
-<blockquote>
-<p>白話：JWT 很小很方便還能儲存資訊，可以拿來解決平常 Session 遇到的限制－－像是使用者在不同網域之間會需要重複登入。</p>
+    <div class="post-content"><h1 id="關於此作品"><a href="#關於此作品" class="headerlink" title="關於此作品"></a>關於此作品</h1><blockquote>
+<p>Github Repository <a target="_blank" rel="noopener" href="https://github.com/DahisC/Amigo-TravelerMap">bluecg-wc-notify-v2</a></p>
 </blockquote>
 <ul>
-<li><p>資訊交換 Information Exchange</p>
-<p>  JWT 也是另一個安全地傳送資訊的好方法，因為 JWT 可以被簽署。舉個例子，如果使用公私鑰的加密方式簽署一個 JWT，你就可以確保請求者是誰；<br>  又或者，如果透過 JWT 中儲存的 header 與 payload 演算法計算其內容是否有沒有被更動過。</p>
-</li>
+<li>透過 Line Notify 推播（Chatbot 要錢 QQ）</li>
 </ul>
-<blockquote>
-<p>白話：JWT 可以透過演算法加密，也可以直接透過伺服器內儲存的密鑰解密以確保內容的完整性</p>
-</blockquote>
-<h1 id="觀念釐清"><a href="#觀念釐清" class="headerlink" title="觀念釐清"></a>觀念釐清</h1><h2 id="JWT-與-Session-機制"><a href="#JWT-與-Session-機制" class="headerlink" title="JWT 與 Session 機制"></a>JWT 與 Session 機制</h2><ul>
-<li><p>Session</p>
-<ul>
-<li>步驟</li>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">技術／套件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">後端框架</td>
+<td align="center">Node.js / express</td>
+</tr>
+<tr>
+<td align="center">爬蟲套件</td>
+<td align="center">cheerio</td>
+</tr>
+<tr>
+<td align="center">部署環境</td>
+<td align="center">Heroku</td>
+</tr>
+</tbody></table>
+<p>主要是透過將 Node.js 的環境架設在 Heroku 上，並以 express 作為後端框架每隔一段時間從遊戲論壇上撈取最新的世界頻道訊息，再透過 Line Notify 主動推播給訂閱服務的使用者。</p>
+<p>但由於當時未透過套件介接 Line Notify 的 API，也因此衍伸出了之後自己開發並發布到 NPM 上的套件 <a href="#">line-notify</a> 試圖簡化介接這類以 Oauth 2 為標準的 API 之間繁瑣的溝通過程。</p>
+<h1 id="實際畫面"><a href="#實際畫面" class="headerlink" title="實際畫面"></a>實際畫面</h1><p><img src="/posts/63534/S__9093171.jpg"><br><img src="/posts/63534/S__9093173.jpg"></p>
+<h1 id="tl-dr"><a href="#tl-dr" class="headerlink" title="tl;dr"></a>tl;dr</h1><ul>
+<li>作品其實叫水藍嗶啵鼠（水藍是伺服器的名字，嗶啵鼠則是遊戲中的道具，會發出各種提醒！）</li>
+<li>還有一張很可愛的 Logo</li>
+<li>魔力寶貝很好玩</li>
 </ul>
-<ol>
-<li>使用者登入</li>
-<li>伺服器驗證成功後在伺服器端的記憶體存入 Session ID，並將此 Session ID 回傳給使用者</li>
-<li>使用者每次請求時夾帶 Session ID，伺服器在伺服器端的記憶體中尋找此 Session ID 的紀錄</li>
-<li>伺服器透過 Session ID 紀錄的狀態去資料庫中取出使用者資料並判斷授權</li>
-</ol>
-<ul>
-<li>缺點</li>
-</ul>
-<ol>
-<li>不同服務架構底下（像是同組織間的不同網域、負載平衡產生的伺服器等等），伺服器的記憶體無法共享，也導致使用者的登入狀態無法被記住</li>
-</ol>
-</li>
-<li><p>JWT</p>
-<ol>
-<li>使用者登入</li>
-<li>伺服器驗證成功後根據伺服器端中儲存的密鑰加密 JWT，並直接返回給使用者</li>
-<li>使用者每次請求時夾帶 JWT，伺服器只驗證 JWT 的正確性</li>
-<li>從 JWT 中取出使用者的資料並判斷授權</li>
-</ol>
-<ul>
-<li>優點</li>
-</ul>
-<ol>
-<li>當不同服務之間透過同一組密鑰簽署 JWT，在這些服務之間都會認可該 JWT 表明的身分，也就可以做到單一登入（Single Sign On）的功能</li>
-</ol>
-</li>
-</ul>
-<h2 id="驗證-Authentication-與-授權-Authorization"><a href="#驗證-Authentication-與-授權-Authorization" class="headerlink" title="驗證 Authentication 與 授權 Authorization"></a>驗證 Authentication 與 授權 Authorization</h2><ul>
-<li><p>驗證 Authentication</p>
-<ul>
-<li>例子：使用者登入時，伺服器判斷帳號密碼正確與否的過程</li>
-<li>搭配的 HTTP Status Code 是 <code>401 Unauthorized</code></li>
-<li>白話：你是……嗎？</li>
-</ul>
-</li>
-<li><p>授權 Authorization</p>
-<ul>
-<li>例子：使用者請求時，伺服器判斷你能不能執行請求的過程</li>
-<li>搭配的 HTTP Status Code 是 <code>403 Forbidden</code></li>
-<li>白話：你可以做……嗎？</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h1 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/7Q17ubqLfaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><img src="/posts/63534/logo.jpg"></p>
 </div>
 
     
@@ -264,7 +225,7 @@
        
       <p class="copyright-item">
         <span>Permalink:</span>
-        <span><a href="https://dahisc.github.io/posts/6430/">https://dahisc.github.io/posts/6430/</a></span>
+        <span><a href="https://dahisc.github.io/posts/63534/">https://dahisc.github.io/posts/63534/</a></span>
       </p>
         
     </section>
@@ -273,7 +234,9 @@
       <div>
         <!-- <span>Tag(s):</span> -->
         <span class="tag">
-          
+           
+          <a href="/tags/Side-Project/"># Side Project</a>
+           
         </span>
       </div>
       <div>
@@ -283,10 +246,8 @@
       </div>
     </section>
     <section class="post-nav">
-      
-      <a class="prev" rel="prev" href="/posts/63534/">把遊戲內的世界頻道訊息推播到 Line 上 - 使用 Node.js 的爬蟲與 Line Notify API 實作</a>
        
-      <a class="next" rel="next" href="/posts/51728/">Misrosoft 官網切版練習</a>
+      <a class="next" rel="next" href="/posts/6430/">JWT</a>
       
     </section>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
