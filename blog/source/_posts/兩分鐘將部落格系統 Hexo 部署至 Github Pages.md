@@ -25,11 +25,12 @@ tags: [Github Page, Hexo]
 
 # 前置作業
 
-## 下載
+## 下載並安裝
 
 1. Node.js
+2. git
 
-## 安裝
+## 套件
 
 1. `npm i hexo-cli -g`
 

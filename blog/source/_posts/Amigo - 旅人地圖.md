@@ -46,6 +46,8 @@ Amigo 是基於地圖提供的服務，讓使用者出門時如果臨時想查�
 
 # 關於此作品
 
+> Github Repository [Amigo - TravelerMap](https://github.com/DahisC/Amigo-TravelerMap)
+
 這個作品是於 2021 年參加職訓時的團體專題題目，班上一共分成 6 組／每組 5 人，由於當時參加職訓之前就有工程師的經驗（班上大多數同學都沒有相關背景；職訓的課程為三個月，內容涵蓋了前端與後端相關技術），所以我也因此被指派為小組組長，整個專題的開發時程約一個月。
 
 透過這次的組長經驗，學習到了如何從頭到尾規劃一次完整的開發流程，並且也以當初工程師學到的技術引導小組成員開發此作品。
@@ -79,8 +81,6 @@ Amigo 是基於地圖提供的服務，讓使用者出門時如果臨時想查�
 
   分支分為開發 development 與生產 production 用的分支，並且對此二分支設了分支保護。
   也要求成員在提交 Pull Request 時需要指定我為 Reviewer，而我也會檢查大家程式碼的撰寫方式與要求程式碼風格（程式碼風格也有統一使用排版套件管理），並適時地給予[撰寫建議](https://github.com/DahisC/Amigo-TravelerMap/pull/44)。
-
-  - [Amigo - TravelerMap (Github Repository)](https://github.com/DahisC/Amigo-TravelerMap)
 
 - 以 Notion 進行討論
   Notion 主要是由另一位團隊成員 C 推坑給我，並且在發現 Notion 真的很好用後就開始認真地在 Notion 上與成員 C 共同規劃團隊進度與整理開發文件。
