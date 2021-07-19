@@ -3,7 +3,10 @@ title: Misrosoft 官網切版練習
 abbrlink: 51728
 date: 2021-06-29 15:15:49
 tags:
+category: Portfolio
 ---
+
+> 因為當時上課時的進度還未以 checkbox 實作，所以選單在展開時可能會不如預期中地釘選在螢幕上。
 
 # 相關連結
 
