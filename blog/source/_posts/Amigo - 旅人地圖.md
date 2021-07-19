@@ -11,13 +11,15 @@ date: 2021-06-28 13:20:16
 
 ![](map.png)
 
-> [Amigo - 旅人地圖官方網站](https://110-03-nchu-amigo.dev-hub.io/)
-
 > **Amigo 是每個人的旅人地圖，記錄著那些短暫出現卻又精彩萬分的事物**
 
 ![](homepage-preview.png)
 
 ---
+
+# 相關連結
+
+- [Amigo - 旅人地圖官方網站](https://110-03-nchu-amigo.dev-hub.io/)
 
 # 關於 Amigo
 
