@@ -12,7 +12,7 @@
 
 
 
-<title>JavaScript 30 | Hexo</title>
+<title>The F2E 2nd 第十關 - 聊天室 | Hexo</title>
 
 
 
@@ -168,7 +168,7 @@
 </script>  
   <article class="post-wrap">
     <header class="post-header">
-      <h1 class="post-title">JavaScript 30</h1>
+      <h1 class="post-title">The F2E 2nd 第十關 - 聊天室</h1>
       
       <div class="post-meta">
          Author:
@@ -176,32 +176,65 @@
          
         <span class="post-time">
           Date:
-          <a href="#">June 27, 2021&nbsp;&nbsp;14:58:44</a>
+          <a href="#">July 18, 2021&nbsp;&nbsp;2:35:44</a>
         </span>
          
+        <span class="post-category">
+          Category: 
+          <a href="/categories/Portfolio/">Portfolio</a>
+          
+        </span>
+        
       </div>
       
     </header>
 
-    <div class="post-content"><h1 id="06-Type-Ahead"><a href="#06-Type-Ahead" class="headerlink" title="06 - Type Ahead"></a><a href="(https://github.com/DahisC/JavaScript30/blob/main/06%20-%20Type%20Ahead/index-START.html)">06 - Type Ahead</a></h1><h2 id="如何在數字中加入千分位逗號？"><a href="#如何在數字中加入千分位逗號？" class="headerlink" title="如何在數字中加入千分位逗號？"></a>如何在數字中加入千分位逗號？</h2><ol>
-<li><p>透過正規表達式</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string.replace(<span class="regexp">/\B(?=(\d&#123;3&#125;)+(?!\d))/g</span>, <span class="string">&#x27;,&#x27;</span>);</span><br><span class="line">string.replace(<span class="regexp">/\B(?=(\d&#123;3&#125;)+\b)/g</span>, <span class="string">&#x27;,&#x27;</span>); <span class="comment">// 另一個寫法</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903609029623815">https://juejin.cn/post/6844903609029623815</a></li>
+    <div class="post-content"><h1 id="相關連結"><a href="#相關連結" class="headerlink" title="相關連結"></a>相關連結</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/DahisC/chatroom">Github Repository</a></li>
+<li><a target="_blank" rel="noopener" href="http://dahisc-chatroom.herokuapp.com/">作品網址 (Heroku)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.behance.net/gallery/84720235/THE-F2E-7-UI">設計稿</a></li>
 </ul>
-</li>
-<li><p>透過 JavaScript 的內建函式</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(string).toLocaleString(); <span class="comment">// 可能有兼容性的問題</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="07-Array-Cardio-Day-2"><a href="#07-Array-Cardio-Day-2" class="headerlink" title="07 - Array Cardio Day 2"></a>07 - Array Cardio Day 2</h1></div>
+<h1 id="關於此作品"><a href="#關於此作品" class="headerlink" title="關於此作品"></a>關於此作品</h1><blockquote>
+<p>六角學院的 The F2E 2nd 活動，主要以 Socket.IO + Nuxt 實作聊天室功能。</p>
+</blockquote>
+<ul>
+<li>2020/5 開發完成</li>
+<li>以 Nuxt 開發，並以 Vuex 管理狀態</li>
+<li>使用 Socket.IO 在客戶端與伺服器之間溝通</li>
+</ul>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">技術／套件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">前端框架</td>
+<td align="center">Vue/Vuex</td>
+</tr>
+<tr>
+<td align="center">後端框架</td>
+<td align="center">Nuxt</td>
+</tr>
+<tr>
+<td align="center">傳輸套件</td>
+<td align="center">Socket.IO</td>
+</tr>
+<tr>
+<td align="center">部署環境</td>
+<td align="center">Heroku</td>
+</tr>
+</tbody></table>
+<h1 id="實際畫面"><a href="#實際畫面" class="headerlink" title="實際畫面"></a>實際畫面</h1><p><img src="/pc-1.png"><br><img src="/pc-2.png"><br><img src="/mobile-1.png"><br><img src="/mobile-2.png"></p>
+</div>
 
     
     <section class="post-copyright">
        
       <p class="copyright-item">
         <span>Permalink:</span>
-        <span><a href="https://dahisc.github.io/posts/58388/">https://dahisc.github.io/posts/58388/</a></span>
+        <span><a href="https://dahisc.github.io/posts/63537/">https://dahisc.github.io/posts/63537/</a></span>
       </p>
         
     </section>
@@ -210,9 +243,7 @@
       <div>
         <!-- <span>Tag(s):</span> -->
         <span class="tag">
-           
-          <a href="/tags/JavaScript/"># JavaScript</a>
-           
+          
         </span>
       </div>
       <div>
@@ -222,10 +253,8 @@
       </div>
     </section>
     <section class="post-nav">
-      
-      <a class="prev" rel="prev" href="/posts/51727/">在 Hexo 中新增留言板插件 Gitalk</a>
        
-      <a class="next" rel="next" href="/posts/9721/">兩分鐘將部落格系統 Hexo 部署至 Github Pages</a>
+      <a class="next" rel="next" href="/posts/63536/">The F2E 2nd 第十關 - 口罩地圖</a>
       
     </section>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
