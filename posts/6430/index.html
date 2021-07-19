@@ -12,7 +12,7 @@
 
 
 
-<title>JWT | Hexo</title>
+<title>Json Web Token | Hexo</title>
 
 
 
@@ -168,7 +168,7 @@
 </script>  
   <article class="post-wrap">
     <header class="post-header">
-      <h1 class="post-title">JWT</h1>
+      <h1 class="post-title">Json Web Token</h1>
       
       <div class="post-meta">
          Author:
@@ -183,8 +183,8 @@
       
     </header>
 
-    <div class="post-content"><h1 id="什麼是-JWT？"><a href="#什麼是-JWT？" class="headerlink" title="什麼是 JWT？"></a>什麼是 JWT？</h1><blockquote>
-<p>JWT aka. Json Web Token 是依據 <a target="_blank" rel="noopener" href="https://datatracker.ietf.org/doc/html/rfc7519">RFC 7519 開放標準</a> 實作的授權（Authorization）機制。<br>麻雀雖小且五臟俱全（a compact and self-contained way）的方式使其可以安全地透過 JSON 格式進行資訊交換，並因數位簽章的機制使其儲存的資料可被信任並通過驗證。<br>加密數位簽章的演算法是使用 HMAC 演算法、或者是以 RDS 或 ECDSA 的公私鑰演算法加密。</p>
+    <div class="post-content"><h1 id="什麼是-Json-Web-Token？"><a href="#什麼是-Json-Web-Token？" class="headerlink" title="什麼是 Json Web Token？"></a>什麼是 Json Web Token？</h1><blockquote>
+<p>Json Web Token aka. JWT 是依據 <a target="_blank" rel="noopener" href="https://datatracker.ietf.org/doc/html/rfc7519">RFC 7519 開放標準</a> 實作的授權（Authorization）機制。<br>麻雀雖小且五臟俱全（a compact and self-contained way）的方式使其可以安全地透過 JSON 格式進行資訊交換，並因數位簽章的機制使其儲存的資料可被信任並通過驗證。<br>加密數位簽章的演算法是使用 HMAC 演算法、或者是以 RDS 或 ECDSA 的公私鑰演算法加密。</p>
 </blockquote>
 <p><a href="#">延伸閱讀：Authorization 與 Authentication 的差別？</a></p>
 <blockquote>
@@ -192,7 +192,7 @@
 </blockquote>
 <h1 id="為什麼應該要用-JWT？"><a href="#為什麼應該要用-JWT？" class="headerlink" title="為什麼應該要用 JWT？"></a>為什麼應該要用 JWT？</h1><ul>
 <li><p>授權 Authorization</p>
-<p>  使用 JWT 最常見的原因。一旦使用者登入後，其後所有的請求都會夾帶 JWT，允許使用者透過此權杖進行各種動作（進入頁面、使用服務、取得資源等等）。<br>  而單一登入（Single Sign On）的功能也是現今 JWT 被廣泛使用的原因之一，因其小而精巧的格式與儲存資訊的方式可以被簡單地應用在不同網域的系統中。</p>
+<p>使用 JWT 最常見的原因。一旦使用者登入後，其後所有的請求都會夾帶 JWT，允許使用者透過此權杖進行各種動作（進入頁面、使用服務、取得資源等等）。<br>而單一登入（Single Sign On）的功能也是現今 JWT 被廣泛使用的原因之一，因其小而精巧的格式與儲存資訊的方式可以被簡單地應用在不同網域的系統中。</p>
 </li>
 </ul>
 <blockquote>
@@ -200,7 +200,7 @@
 </blockquote>
 <ul>
 <li><p>資訊交換 Information Exchange</p>
-<p>  JWT 也是另一個安全地傳送資訊的好方法，因為 JWT 可以被簽署。舉個例子，如果使用公私鑰的加密方式簽署一個 JWT，你就可以確保請求者是誰；<br>  又或者，如果透過 JWT 中儲存的 header 與 payload 演算法計算其內容是否有沒有被更動過。</p>
+<p>JWT 也是另一個安全地傳送資訊的好方法，因為 JWT 可以被簽署。舉個例子，如果使用公私鑰的加密方式簽署一個 JWT，你就可以確保請求者是誰；<br>又或者，如果透過 JWT 中儲存的 header 與 payload 演算法計算其內容是否有沒有被更動過。</p>
 </li>
 </ul>
 <blockquote>

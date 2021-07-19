@@ -12,7 +12,7 @@
 
 
 
-<title>水藍嗶啵鼠 - 結合爬蟲與 Line Notify 的作品 | Hexo</title>
+<title>Line Notify 處理服務綁定的套件 | Hexo</title>
 
 
 
@@ -168,7 +168,7 @@
 </script>  
   <article class="post-wrap">
     <header class="post-header">
-      <h1 class="post-title">水藍嗶啵鼠 - 結合爬蟲與 Line Notify 的作品</h1>
+      <h1 class="post-title">Line Notify 處理服務綁定的套件</h1>
       
       <div class="post-meta">
          Author:
@@ -176,7 +176,7 @@
          
         <span class="post-time">
           Date:
-          <a href="#">July 9, 2021&nbsp;&nbsp;16:52:54</a>
+          <a href="#">July 19, 2021&nbsp;&nbsp;11:31:35</a>
         </span>
          
         <span class="post-category">
@@ -189,15 +189,22 @@
       
     </header>
 
-    <div class="post-content"><h1 id="關於此作品"><a href="#關於此作品" class="headerlink" title="關於此作品"></a>關於此作品</h1><blockquote>
-<p>將遊戲內的世界頻道訊息推播到 Line 上 - 使用 Node.js 的爬蟲與 Line Notify API 實作</p>
-</blockquote>
-<blockquote>
-<p>Github Repository <a target="_blank" rel="noopener" href="https://github.com/DahisC/Amigo-TravelerMap">bluecg-wc-notify-v2</a></p>
+    <div class="post-content"><h1 id="相關連結"><a href="#相關連結" class="headerlink" title="相關連結"></a>相關連結</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/@dahisc/line-notify">NPM</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DahisC/line-notify">Github Repository</a></li>
+</ul>
+<h1 id="關於此作品"><a href="#關於此作品" class="headerlink" title="關於此作品"></a>關於此作品</h1><blockquote>
+<p>這個作品主要是當時在撰寫 <a href="https://dahisc.github.io/posts/63534/">水藍嗶啵鼠</a> 時要接 Line Notify 的過程中有很多設定與文件要看，後來乾脆索性自己開發一個套件專門解決這件事情，就像用 Node.js 中的 Passport 一樣；主要是解決將使用者與服務綁定的中間這段 Oauth 2 的認證過程。</p>
 </blockquote>
 <ul>
-<li>使用 Node.js / express 作為後端系統並撰寫爬蟲透過撈取資料</li>
-<li>透過 Line Notify 推播（Chatbot 要錢 QQ）</li>
+<li>2020/7 開發完成</li>
+<li>主要使用了 express 中的路由功能實作，使用者只須引入套件後填入以下欄位即可串接服務<ol>
+<li> client_id</li>
+<li> client_secret,</li>
+<li> succeeded_route,</li>
+<li> failed_route,</li>
+</ol>
+</li>
 </ul>
 <h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><table>
 <thead>
@@ -208,30 +215,13 @@
 </thead>
 <tbody><tr>
 <td align="center">後端框架</td>
-<td align="center">Node.js / express</td>
-</tr>
-<tr>
-<td align="center">爬蟲套件</td>
-<td align="center">cheerio</td>
+<td align="center">Node.js + express</td>
 </tr>
 <tr>
 <td align="center">部署環境</td>
-<td align="center">Heroku</td>
-</tr>
-<tr>
-<td align="center">第三方 API</td>
-<td align="center">Line Notify</td>
+<td align="center">NPM</td>
 </tr>
 </tbody></table>
-<p>主要是透過將 Node.js 的環境架設在 Heroku 上，並以 express 作為後端框架每隔一段時間從遊戲論壇上撈取最新的世界頻道訊息，再透過 Line Notify 主動推播給訂閱服務的使用者。</p>
-<p>但由於當時未透過套件介接 Line Notify 的 API，也因此衍伸出了之後自己開發並發布到 NPM 上的套件 <a href="#">line-notify</a> 試圖簡化介接這類以 Oauth 2 為標準的 API 之間繁瑣的溝通過程。</p>
-<h1 id="實際畫面"><a href="#實際畫面" class="headerlink" title="實際畫面"></a>實際畫面</h1><p><img src="/posts/63534/S__9093171.jpg"><br><img src="/posts/63534/S__9093173.jpg"></p>
-<h1 id="tl-dr"><a href="#tl-dr" class="headerlink" title="tl;dr"></a>tl;dr</h1><ul>
-<li>作品其實叫水藍嗶啵鼠（水藍是伺服器的名字，嗶啵鼠則是遊戲中的道具，會發出各種提醒！）</li>
-<li>還有一張很可愛的 Logo</li>
-<li>魔力寶貝很好玩</li>
-</ul>
-<p><img src="/posts/63534/logo.jpg"></p>
 </div>
 
     
@@ -239,7 +229,7 @@
        
       <p class="copyright-item">
         <span>Permalink:</span>
-        <span><a href="https://dahisc.github.io/posts/63534/">https://dahisc.github.io/posts/63534/</a></span>
+        <span><a href="https://dahisc.github.io/posts/63538/">https://dahisc.github.io/posts/63538/</a></span>
       </p>
         
     </section>
@@ -248,11 +238,7 @@
       <div>
         <!-- <span>Tag(s):</span> -->
         <span class="tag">
-           
-          <a href="/tags/Line-Notify/"># Line Notify</a>
           
-          <a href="/tags/%E7%88%AC%E8%9F%B2/"># 爬蟲</a>
-           
         </span>
       </div>
       <div>
@@ -262,10 +248,8 @@
       </div>
     </section>
     <section class="post-nav">
-      
-      <a class="prev" rel="prev" href="/posts/63537/">The F2E 2nd 第十關 - 聊天室</a>
        
-      <a class="next" rel="next" href="/posts/6430/">Json Web Token</a>
+      <a class="next" rel="next" href="/posts/63537/">The F2E 2nd 第十關 - 聊天室</a>
       
     </section>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
