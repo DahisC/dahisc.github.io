@@ -4,9 +4,10 @@ navname: Dahis's Lighthouse
 # navigatior items
 nav:
   Posts: /archives
-  Categories: /category
-  Tags: /tag
-  About: /about
+  # Categories: /category
+  # Tags: /tag
+  # About: /about
+  Portfolio: /categories/Portfolio/
 
 # favicon
 favicon: /favicon.ico
