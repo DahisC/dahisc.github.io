@@ -1,5 +1,5 @@
 ---
-title: Misrosoft 官網切版練習
+title: Microsoft 官網切版練習
 abbrlink: 51728
 date: 2021-06-29 15:15:49
 tags:
